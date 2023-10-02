@@ -97,7 +97,9 @@ export class AuthService {
     });
   }
 
-  async signout() {
-    return { message: 'signout was succesfull' };
+  async signout(req: Request, res: Response) {
+    res.clearCookie('token');
+
+    return res.send({ message: 'Logged out succesfully' });
   }
 }

@@ -23,7 +23,7 @@ export class AuthController {
   }
 
   @Post('signout')
-  signout() {
-    return this.authService.signout();
+  signout(@Req() request: Request, @Res() response: Response) {
+    return this.authService.signout(request, response);
   }
 }
