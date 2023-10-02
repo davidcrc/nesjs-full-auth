@@ -91,3 +91,15 @@ npm i cookie-parser
 ```bash
 npm i -D @types/cookie-parser
 ```
+
+## Passport ( add restrictions to endpoints to get data in session)
+
+- create jwt.guard and jwt.strategy, then add JwtStrategy to providers in users.module
+
+```bash
+npm i @nestjs/passport passport passport-jwt
+```
+
+```bash
+npm i -D @types/passport-jwt
+```
