@@ -2,13 +2,17 @@
 
 - ## Modules
 
-  ### Auth
+```bash
+nest g resource users
+```
 
-  - With RestAPI and without CRUD points:
+### Auth
 
-  ```bash
-  nest g resource auth
-  ```
+- With RestAPI and without CRUD points:
+
+```bash
+nest g resource auth
+```
 
 ## Prisma
 
