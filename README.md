@@ -24,7 +24,7 @@
 
 ## Description
 
-Nest.js - full authentication
+Nest.js - full authentication - API REST
 
 ## Installation
 
@@ -56,4 +56,50 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
+```
+
+## Endpoints - using cookie token
+
+- signup - POST
+
+```
+http://localhost:5000/auth/signup
+```
+
+```json
+{
+  "email": "test3@exampe.com",
+  "password": "123"
+}
+```
+
+- signin POST
+
+```
+http://localhost:5000/auth/signin
+```
+
+```json
+{
+  "email": "test3@exampe.com",
+  "password": "123"
+}
+```
+
+- signout
+
+```
+http://localhost:5000/auth/signout
+```
+
+- getMyUser - GET (use first signin)
+
+```
+http://localhost:5000/users/527ec525-8091-4899-a9cc-5e3edd3b1548
+```
+
+- users - GET (no needed session)
+
+```
+http://localhost:5000/users
 ```
