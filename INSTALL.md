@@ -71,3 +71,19 @@ npm i bcrypt
 ```bash
 npm i -D @types/bcrypt
 ```
+
+## Authentication
+
+```bash
+npm install --save @nestjs/jwt
+```
+
+## Cookie
+
+```bash
+npm i cookie-parser
+```
+
+```bash
+npm i -D @types/cookie-parser
+```
