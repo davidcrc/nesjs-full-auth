@@ -55,3 +55,19 @@ export class PrismaModule {}
 ```bash
 npx prisma migrate dev --name init
 ```
+
+## Validation
+
+```bash
+npm i --save class-validator class-transformer
+```
+
+## Encryption and Hashing
+
+```bash
+npm i bcrypt
+```
+
+```bash
+npm i -D @types/bcrypt
+```
